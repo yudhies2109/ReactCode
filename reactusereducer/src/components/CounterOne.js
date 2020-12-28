@@ -15,7 +15,7 @@ const reducer = (state, action) => {
 }
 
 function CounterOne() {
-    
+
     const [count, dispatch] = useReducer(reducer, initialState)
 
     return (

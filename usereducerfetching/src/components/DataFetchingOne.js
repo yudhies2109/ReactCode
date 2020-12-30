@@ -14,7 +14,7 @@ function DataFetchingOne() {
             setpost(Response.data)
             setError('')
         })
-        .catch(error => {
+        .catch(eror => {
             setLoading(false)
             setpost({})
             setError('Something WRONG!!')
@@ -23,7 +23,7 @@ function DataFetchingOne() {
 
     return (
         <div>
-            {loading ? 'loading' : post.title}
+            {loading ? 'loading...' : post.title}
             {eror ? eror : null}
         </div>
     )

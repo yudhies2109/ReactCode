@@ -13,6 +13,7 @@ function HookCounterOne() {
     return (
         <div>
             <input type='text' value={name} onChange={e => setName(e.target.value)}/>
+            <h1>{ name }</h1>
             <button onClick={() => setCount(count + 1)}> Click {count} times</button>
         </div>
     )

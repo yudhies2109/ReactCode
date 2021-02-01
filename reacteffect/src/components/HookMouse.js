@@ -14,7 +14,7 @@ function HookMouse() {
     useEffect(() => {
         console.log('useEffect Called');
         window.addEventListener('mousemove', logMousePosition)
-// Unmounting harus di dalam useeffect dan di dalam return
+// Unmounting harus di dalam useeffect terkait dan di dalam return
         return () => {
             console.log(" Component Un mounthing");
             window.removeEventListener('mousemove', logMousePosition)

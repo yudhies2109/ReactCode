@@ -3,7 +3,7 @@ import useCounter from '../hook/useCounter'
 
 function CounterOne() {
 
-    const [count, increment, decrement, reset] = useCounter()
+    const [count, increment, decrement, reset] = useCounter(0, 1)
 
     return (
         <div>

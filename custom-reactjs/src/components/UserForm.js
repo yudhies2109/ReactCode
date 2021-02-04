@@ -3,8 +3,12 @@ import useInput from '../hook/useInput'
 
 function UserForm() {
 
-    const [firstName, bindFirstName, resetFirstName] = useInput('')
+    const [bindFirstName, firstName, resetFirstName] = useInput('')
     const [lastName, bindLastName, resetLastName] = useInput('')
+
+    console.log(firstName, 'Ini first name saya')
+    console.log(bindFirstName, 'Ini first name')
+    console.log(resetFirstName, 'Ini first name reset')
 
     const submitHandler = e => {
         e.preventDefault();
